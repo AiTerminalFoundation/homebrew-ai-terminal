@@ -1,11 +1,11 @@
 class AiTerminal < Formula
   desc "AI-powered terminal with natural language command interface"
-  homepage "https://github.com/AiTerminalFoundations/ai-terminal"
+  homepage "https://github.com/AiTerminalFoundation/ai-terminal"
   url "https://github.com/AiTerminalFoundation/ai-terminal/releases/download/v0.2.0/ai-terminal-0.2.0.dmg"
   version "0.2.0"
   sha256 "3404a8d96499764195ba3d3cc411824fa3732b7ea0aaf4b3329e7c45e6e7a4f8" # Updated automatically by build script
 
-  depends_on macos: ">= :monterey"
+  depends_on :macos => :monterey
   
   livecheck do
     url :homepage
