@@ -13,23 +13,9 @@ class AiTerminal < Formula
   end
 
   def install
-    # Mount the DMG
-    mount_point = "/Volumes/ai-terminal"
-    system "hdiutil", "attach", "-nobrowse", "-quiet", "-mountpoint", mount_point, "#{staged_path}/ai-terminal-#{version}.dmg"
-    
-    # Copy the app to the prefix directory
-    prefix.install "#{mount_point}/ai-terminal.app"
-    
-    # Create symlink in bin directory
-    bin.install_symlink "#{prefix}/ai-terminal.app/Contents/MacOS/ai-terminal" => "ai-terminal"
-    
-    # Unmount the DMG
-    system "hdiutil", "detach", "-quiet", mount_point
-  rescue => e
-    # Handle errors during installation
-    opoo "Error during installation: #{e.message}"
-    system "hdiutil", "detach", "-quiet", mount_point rescue nil
-    raise
+    # DMGs are not supported directly in formulas
+    # Using a cask is more appropriate for DMG installations
+    odie "This formula has been updated to use a cask. Please use 'brew install --cask ai-terminal' instead."
   end
 
   def post_install
