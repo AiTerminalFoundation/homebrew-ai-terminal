@@ -1,9 +1,9 @@
 class AiTerminal < Formula
   desc "AI-powered terminal with natural language command interface"
   homepage "https://github.com/AiTerminalFoundation/ai-terminal"
-  url "https://github.com/AiTerminalFoundations/ai-terminal/releases/download/v0.2.0/ai-terminal-0.2.0.dmg"
-  version "0.2.0"
-  sha256 "bd98651acc9cd028f4cc6bc6f28f3696fdcb8708659af31477737a02f41c227a" # Updated automatically by build script
+  url "https://github.com/AiTerminalFoundation/ai-terminal/releases/download//ai-terminal-.dmg"
+  version ""
+  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5" # Updated automatically by build script
 
   depends_on :macos => :monterey
   
