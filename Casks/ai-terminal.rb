@@ -1,8 +1,8 @@
 cask "ai-terminal" do
-  version "0.4.13"
-  sha256 "dc4e653c694e44eaf8bd8fea0eebd7b770e288a7f8bd27c0007da2362d503714"
+  version "0.4.14"
+  sha256 "f96719574d192900d2bc71698f13e56d2f3708cd0cb6b6efc0c0e9386ba3d565"
 
-  url "https://github.com/AiTerminalFoundation/ai-terminal/releases/download/v0.4.13/ai-terminal-0.4.13.dmg"
+  url "https://github.com/AiTerminalFoundation/ai-terminal/releases/download/v0.4.14/ai-terminal-0.4.14.dmg"
   name "AI Terminal"
   desc "AI-powered terminal with natural language command interface"
   homepage "https://github.com/AiTerminalFoundation/ai-terminal"
